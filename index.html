@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Localizador de Lojas por Categoria</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    />
+    <link rel="stylesheet" href="/css/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>🔍 Encontre Lojas Próximas</h1>
+
+      <div class="search-box">
+        <input
+          type="text"
+          id="address"
+          placeholder="Digite um endereço (ex: Av. Paulista, 1000 - São Paulo)"
+          autocomplete="off"
+        />
+        <div class="search-options">
+          <div class="radius-selector">
+            <label for="search-radius">Raio de busca:</label>
+            <div class="radius-input">
+              <input
+                type="range"
+                id="search-radius"
+                min="1"
+                max="10"
+                value="5"
+                step="0.5"
+              />
+              <span id="radius-value">5 km</span>
+            </div>
+          </div>
+          <button id="search-button">Buscar Lojas</button>
+        </div>
+      </div>
+
+      <div class="loading" id="loading">
+        <div class="spinner"></div>
+        Buscando lojas próximas...
+      </div>
+
+      <div class="error" id="error"></div>
+
+      <div id="categories" class="categories-container"></div>
+
+      <div id="map"></div>
+
+      <div id="results-container">
+        <h2 id="results-title">Resultados</h2>
+        <div id="results" class="results-grid"></div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="/js/script.js"></script>
+  </body>
+</html>
