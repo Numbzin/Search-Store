@@ -2,6 +2,8 @@
 
 Um aplicativo web para encontrar estabelecimentos comerciais próximos a um endereço específico, com filtros por categoria e raio de busca personalizável.
 
+Teste aqui [Search Store](https://search-store-two.vercel.app/).
+
 ![Banner do Projeto](print.png)
 
 ## 📋 Índice
@@ -46,7 +48,7 @@ O **Localizador de Lojas por Categoria** é uma aplicação web que permite aos 
 ## 📁 Estrutura do Projeto
 
 ```
-localizador-lojas/
+Search-Store/
 │
 ├── index.html         # Estrutura da página
 ├── styles.css         # Estilos e layout
